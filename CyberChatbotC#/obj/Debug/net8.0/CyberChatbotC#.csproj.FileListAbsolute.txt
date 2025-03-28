@@ -1,0 +1,15 @@
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\CyberChatbotC#.exe
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\CyberChatbotC#.deps.json
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\CyberChatbotC#.runtimeconfig.json
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\CyberChatbotC#.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\CyberChatbotC#.pdb
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.AssemblyInfoInputs.cache
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.AssemblyInfo.cs
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.csproj.CoreCompileInputs.cache
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.sourcelink.json
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\refint\CyberChatbotC#.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.pdb
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.genruntimeconfig.cache
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\ref\CyberChatbotC#.dll
