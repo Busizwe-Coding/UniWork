@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T9KyLAZM2Xc=",
+  "dgSpecHash": "6/SreEUvYQs=",
   "success": true,
   "projectFilePath": "C:\\Users\\me\\source\\repos\\CyberChatbotC#\\CyberChatbotC#\\CyberChatbotC#.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\me\\.nuget\\packages\\system.windows.extensions\\9.0.3\\system.windows.extensions.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

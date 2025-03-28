@@ -13,3 +13,7 @@ C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\refint\C
 C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.pdb
 C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.genruntimeconfig.cache
 C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\ref\CyberChatbotC#.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberChatbotC#.csproj.AssemblyReference.cache
+C:\Users\me\source\repos\CyberChatbotC#\CyberChatbotC#\obj\Debug\net8.0\CyberCha.53D498DD.Up2Date

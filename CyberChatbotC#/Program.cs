@@ -1,6 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Creating a SIMPLE chatbot that only answers cybersecurity related questions
+using System;
 using System.Drawing;
+using System.Media;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace simpleChatbot
 {
@@ -71,6 +75,7 @@ namespace simpleChatbot
     { 
         static void welcomeDisplay()
         {
+            //change colour of diplay
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"                                  
                                                                           
@@ -116,27 +121,74 @@ namespace simpleChatbot
                  
         ");
 
+            //formatting
             Console.WriteLine("Welcome to the LYD Cybersecurtiy Chatbot!");
             Console.WriteLine("____________________________________________________________________");
             Console.WriteLine();
             Console.ResetColor();
         }
 
+        //we have a welcome voice
+        static void playGreeting()
+        {
+            //try catch for errors
+            try
+            {
+                //finds the file
+                string soundFilePah = "C:\\Users\\me\\source\\repos\\CyberChatbotC#\\CHATBOTMEDIA\\welcomeMan.wav";
+
+                using(SoundPlayer player = new SoundPlayer(soundFilePah))
+                {
+                    //plays audio
+                    player.Play();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Sound not detected. {ex.Message}");
+            }
+        }
+
         // we run everything from the main class
         static void Main (string[] args)
         {
-
+            //begin
+            playGreeting();
             welcomeDisplay();
+
             //make a bot object 
             chatBot bot = new chatBot();
 
-            Console.WriteLine("Hello I am the cyber security chatbot! How may i assist you today?");
+            //ask for a name
+            Console.Write("Hi there can i get your name? Name: ");
+            string user= Console.ReadLine();
+            Console.WriteLine();
+
+            //loop until name is given
+
+            while (string.IsNullOrEmpty(user))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Hmm... It seems you haven't said anything? Please tell me your name.");
+                Console.WriteLine();
+
+                //loop starts here
+                user = Console.ReadLine()?.Trim();
+                Console.WriteLine();
+                
+            }
+
+            //formatting
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine();
+            Console.WriteLine("Hello, " + user + "! I am the cyber security chatbot! How may i assist you today?");
             Console.WriteLine();
 
             Console.WriteLine("Type 'exit' to end convo.");
             Console.WriteLine();
 
-            //make a while true loop so the console doesn't auto close
+            //make a while 'true' loop so the console doesn't auto close
             while (true)
             {
                 //set user reponse colour to blue
@@ -156,7 +208,7 @@ namespace simpleChatbot
 
                 //read and fetch response
                 string response = bot.getResponses(input);
-                Console.WriteLine(response);
+                Console.WriteLine("Well "+ user+ ", "+response);
 
                 Console.WriteLine();
                 Console.WriteLine("------------------------------------------------------");
@@ -165,8 +217,7 @@ namespace simpleChatbot
                 Console.WriteLine("Any more questions?");
                 Console.WriteLine();
             }
-
-            
+             
         }
     }
 }
