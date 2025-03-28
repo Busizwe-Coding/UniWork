@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Creating a SIMPLE chatbot that only answers cybersecurity related questions
+using System.Drawing;
+
 namespace simpleChatbot
 {
     //A namespace in C# is like a folder
@@ -44,13 +46,13 @@ namespace simpleChatbot
 
             //we will create responses for generic questions "how are you?"|"what is your purpose?"|"what can i ask you?"
             if (input == "how are you?")
-                return "I am well. Do you have anymore questions?";
+                return "I am well.";
 
             if (input == "what is your purpose?")
-                return "I answer questions about cyber security. Do you have anymore questions?";
+                return "I answer questions about cyber security.";
 
             if (input == "what can i ask you?")
-                return "Anything about cyber security. Do you have anymore questions?";
+                return "Anything about cyber security.";
              
 
             //iterate through the input for a key term
@@ -64,22 +66,107 @@ namespace simpleChatbot
             return "I only answer cyber security related questions.";
         }
     }
-      
+  
     public class Program
-    {
+    { 
+        static void welcomeDisplay()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(@"                                  
+                                                                          
+                       nYmvvvvvvvvvvvvvvvvvvvvvvvt03z                     
+                      gdz                          wX                     
+                      5s     wieeeeeeeeeeeeeeiu     5s                    
+                      5s    0cu              uc9    5s                    
+                      5s   s5                  5s   5s                    
+                      5s   s5                  5s   5s                    
+                      5s   s5                  5s   5s                    
+                      5s   s5                  5s   5s                    
+                      5s   s5                  5s   5s                    
+                sacilljklllkjlllllllllllllllllljkllljklkid0r              
+              x7gy                                        zi7u            
+              4r                                            xX            
+              X         zwwz                    zwwz         X            
+              X       v1BAAD5w                w5DAAB1u       X            
+              X      wAAAAAAAE                EAAAAAAAw      X            
+              X      sAAAAAAABx              xBAAAAAAAs      X            
+              X       lPAAAASp      vccv      pSAAAAPl       X            
+              X         wqrw       sEAAEr       wrqw         X            
+              X                    tHAAHt                    X            
+              X                    rFAAIv                    X            
+              X                   wIAAAANx                   X            
+              X                   OAAAAAAV                   X            
+              X                  zvvvvvvvv                   X            
+              X                                              X            
+              X                                              X            
+              4s            7DDDDDDDDDDDDDDDDDDDe           xY            
+              x5jy                                        yl5t            
+                t58kssssssssssssssssssssssssssssssssssssk93q              
+                                                                                                     
+                                                                                                    
+              
+ /$$        /$$$$$$   /$$$$$$  /$$   /$$       /$$     /$$ /$$$$$$  /$$   /$$ /$$$$$$$        /$$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$   /$$$$$$ 
+| $$       /$$__  $$ /$$__  $$| $$  /$$/      |  $$   /$$//$$__  $$| $$  | $$| $$__  $$      | $$__  $$ /$$__  $$ /$$__  $$| $$  /$$/| $$__  $$ /$$__  $$ /$$__  $$| $$__  $$ /$$__  $$
+| $$      | $$  \ $$| $$  \__/| $$ /$$/        \  $$ /$$/| $$  \ $$| $$  | $$| $$  \ $$      | $$  \ $$| $$  \ $$| $$  \__/| $$ /$$/ | $$  \ $$| $$  \ $$| $$  \ $$| $$  \ $$| $$  \__/
+| $$      | $$  | $$| $$      | $$$$$/          \  $$$$/ | $$  | $$| $$  | $$| $$$$$$$/      | $$$$$$$ | $$$$$$$$| $$      | $$$$$/  | $$  | $$| $$  | $$| $$  | $$| $$$$$$$/|  $$$$$$ 
+| $$      | $$  | $$| $$      | $$  $$           \  $$/  | $$  | $$| $$  | $$| $$__  $$      | $$__  $$| $$__  $$| $$      | $$  $$  | $$  | $$| $$  | $$| $$  | $$| $$__  $$ \____  $$
+| $$      | $$  | $$| $$    $$| $$\  $$           | $$   | $$  | $$| $$  | $$| $$  \ $$      | $$  \ $$| $$  | $$| $$    $$| $$\  $$ | $$  | $$| $$  | $$| $$  | $$| $$  \ $$ /$$  \ $$
+| $$$$$$$$|  $$$$$$/|  $$$$$$/| $$ \  $$          | $$   |  $$$$$$/|  $$$$$$/| $$  | $$      | $$$$$$$/| $$  | $$|  $$$$$$/| $$ \  $$| $$$$$$$/|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+|________/ \______/  \______/ |__/  \__/          |__/    \______/  \______/ |__/  |__/      |_______/ |__/  |__/ \______/ |__/  \__/|_______/  \______/  \______/ |__/  |__/ \______/ 
+                 
+        ");
+
+            Console.WriteLine("Welcome to the LYD Cybersecurtiy Chatbot!");
+            Console.WriteLine("____________________________________________________________________");
+            Console.WriteLine();
+            Console.ResetColor();
+        }
+
         // we run everything from the main class
         static void Main (string[] args)
         {
+
+            welcomeDisplay();
             //make a bot object 
             chatBot bot = new chatBot();
 
             Console.WriteLine("Hello I am the cyber security chatbot! How may i assist you today?");
             Console.WriteLine();
-            string input = Console.ReadLine();
+
+            Console.WriteLine("Type 'exit' to end convo.");
             Console.WriteLine();
 
-            string response = bot.getResponses(input);
-            Console.WriteLine(response);
+            //make a while true loop so the console doesn't auto close
+            while (true)
+            {
+                //set user reponse colour to blue
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write(">");
+
+                string input = Console.ReadLine();
+                Console.WriteLine();
+
+                if (input == "exit")
+                {
+                    break;
+                }
+
+                //Reset bot response colour
+                Console.ResetColor();
+
+                //read and fetch response
+                string response = bot.getResponses(input);
+                Console.WriteLine(response);
+
+                Console.WriteLine();
+                Console.WriteLine("------------------------------------------------------");
+
+                Console.WriteLine();
+                Console.WriteLine("Any more questions?");
+                Console.WriteLine();
+            }
+
+            
         }
     }
 }
